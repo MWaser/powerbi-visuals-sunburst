@@ -158,7 +158,7 @@ module powerbi.extensibility.visual {
                 options.element);
             this.percentageFormatter = valueFormatter.create({ format: "0.00%;-0.00%;0.00%" });
             this.colorPalette = this.visualHost.colorPalette;
-            let arcSizeFactor: number = 3;
+            let arcSizeFactor: number = 1.5;
             this.arc = d3.svg.arc<SunburstSlice>()
                 .startAngle((slice: SunburstSlice) => slice.x)
                 .endAngle((slice: SunburstSlice) => slice.x + slice.dx)
